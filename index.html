@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153e3b">
+  <meta name="description" content="Distinctive digital planners, creative printables, AI clipart and design resources from Appalachian Digital Creations.">
+  <title>Appalachian Digital Creations | Creativity, Rooted Differently</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #176e68;
+      --deep: #102b29;
+      --gold: #d6b46a;
+      --coral: #ed806e;
+      --cream: #fff5e5;
+      --ink: #292923;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--cream);
+      font-family: 'DM Sans', sans-serif;
+      background-color: #211d18;
+      background-image: linear-gradient(#171b19dd,#171b19ed),
+        url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1800&q=80');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; }
+    .topline {
+      text-align: center; padding: 10px 14px;
+      background: var(--gold); color: var(--deep);
+      font-size: 11px; letter-spacing: 2px; font-weight: 700;
+    }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 20px; padding: 22px clamp(18px,6vw,90px);
+      border-bottom: 1px solid #d6b46a55;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .monogram {
+      display: grid; place-items: center; width: 48px; height: 48px;
+      border: 1px solid var(--gold); color: var(--gold);
+      font: 600 26px 'Cormorant Garamond', serif;
+      border-radius: 50%;
+    }
+    .brand-name { font: 600 23px 'Cormorant Garamond',serif; }
+    .brand-sub { color: var(--gold); font-size: 9px; letter-spacing: 2px; margin-top: 4px; }
+    nav { display: flex; align-items: center; gap: 25px; font-size: 12px; }
+    nav a:hover { color: var(--gold); }
+    .nav-cta, .button {
+      display: inline-block; padding: 13px 20px;
+      background: var(--teal); border: 1px solid var(--gold);
+      color: white; letter-spacing: 1px; font-size: 11px;
+      font-weight: 700; text-align: center;
+    }
+    .hero {
+      min-height: 570px; display: grid; place-items: center;
+      text-align: center; padding: 85px 22px 95px;
+      background: radial-gradient(ellipse at center,#176e6844,transparent 70%);
+    }
+    .eyebrow { color: var(--gold); font-size: 10px; letter-spacing: 4px; font-weight: 700; }
+    h1 {
+      max-width: 850px; margin: 24px auto;
+      font: 500 clamp(48px,8vw,88px)/.98 'Cormorant Garamond',serif;
+    }
+    h1 em { color: var(--gold); font-weight: 400; }
+    .hero p { max-width: 550px; margin: 0 auto 30px; color: #e4dccc; line-height: 1.9; font-size: 14px; }
+    .button.coral { background: var(--coral); border-color: var(--coral); color: #271d19; }
+    .hero .button { margin: 5px; }
+    .section { padding: 75px clamp(20px,7vw,100px); }
+    .light-panel { background: var(--cream); color: var(--ink); }
+    .section-head { text-align: center; margin-bottom: 38px; }
+    h2 { font: 500 clamp(36px,5vw,53px)/1.05 'Cormorant Garamond',serif; margin: 14px 0; }
+    .section-head p { font-size: 13px; color: #777168; line-height: 1.8; }
+    .categories { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+    .category {
+      padding: 26px 15px; text-align: center;
+      border: 1px solid #d6b46a88; background: #176e680c;
+      transition: transform .2s, background .2s;
+    }
+    .category:hover { transform: translateY(-4px); background: #176e6816; }
+    .category .symbol { font-size: 30px; color: var(--teal); }
+    .category h3 { font: 600 23px 'Cormorant Garamond',serif; margin: 12px 0 6px; }
+    .category p { font-size: 11px; color: #777168; line-height: 1.7; }
+    .shop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .product { background: #fffaf0; color: var(--ink); }
+    .art {
+      min-height: 210px; display: grid; place-items: center;
+      text-align: center; padding: 25px;
+      background: linear-gradient(140deg,#194c46,#102b29 65%,#543d29);
+      color: var(--gold); font: 500 32px/1.05 'Cormorant Garamond',serif;
+    }
+    .art.coral-art { background: linear-gradient(140deg,#f3c0a5,#ed806e); color: #492e26; }
+    .art.gold-art { background: linear-gradient(140deg,#d8bf82,#8b6c37); color: #292923; }
+    .product-info { padding: 19px; }
+    .product-info small { color: var(--teal); font-size: 9px; letter-spacing: 2px; font-weight: 700; }
+    .product-info h3 { font: 600 25px 'Cormorant Garamond',serif; margin: 8px 0; }
+    .product-info p { color: #777168; font-size: 12px; line-height: 1.7; }
+    .product-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 18px; }
+    .price { color: var(--teal); font-weight: 700; }
+    .mini-button { border: 0; background: var(--teal); color: white; padding: 10px 13px; font-size: 10px; }
+    .story {
+      text-align: center; background: linear-gradient(110deg,#102b29f5,#176e68ed);
+      padding: 70px 25px; border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+    }
+    .story p { max-width: 650px; margin: 20px auto; font: 20px/1.8 'Cormorant Garamond',serif; color: #f1e8d9; }
+    footer { text-align: center; padding: 38px 20px; color: #d7cbb8; font-size: 11px; line-height: 2; }
+    footer strong { color: var(--gold); }
+    @media(max-width:760px) {
+      header { flex-wrap: wrap; padding: 18px; }
+      nav { width: 100%; gap: 15px; flex-wrap: wrap; font-size: 11px; }
+      .nav-cta { margin-left: auto; }
+      .categories { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .shop-grid { grid-template-columns: 1fr; max-width: 440px; margin: auto; }
+      .hero { min-height: 480px; }
+      .section { padding: 55px 18px; }
+      body { background-attachment: scroll; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline">APPALACHIAN ROOTS · ARTIFICIAL INTELLIGENCE · HUMAN CREATIVITY</div>
+  <header>
+    <a class="brand" href="#" aria-label="Appalachian Digital Creations home">
+      <span class="monogram">A</span>
+      <span>
+        <div class="brand-name">Appalachian Digital</div>
+        <div class="brand-sub">CREATIONS · MADE DIFFERENTLY</div>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#collections">Collections</a>
+      <a href="#featured">The Shop</a>
+      <a href="#story">Our Roots</a>
+      <a class="nav-cta" href="#featured">EXPLORE THE SHOP ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">ROOTED IN THE MOUNTAINS. MADE FOR WHAT'S NEXT.</div>
+        <h1>A little mountain soul.<br><em>A whole lot of imagination.</em></h1>
+        <p>Distinctive digital goods for creative minds. Discover thoughtfully designed printables, beautiful planners, and imaginative artwork inspired by the spirit of Appalachia and the possibilities of tomorrow.</p>
+        <a class="button coral" href="#featured">SHOP DIGITAL CREATIONS ↗</a>
+        <a class="button" href="#collections">FIND YOUR NEXT IDEA</a>
+      </div>
+    </section>
+
+    <section class="section light-panel" id="collections">
+      <div class="section-head">
+        <div class="eyebrow">A PLACE FOR EVERY KIND OF CREATIVE</div>
+        <h2>Find Your Kind of Wonderful</h2>
+        <p>Digital tools and creative treasures to make your ideas come to life.</p>
+      </div>
+      <div class="categories">
+        <a class="category" href="#featured"><div class="symbol">✳</div><h3>AI Clipart</h3><p>Distinctive artwork for your next big idea.</p></a>
+        <a class="category" href="#featured"><div class="symbol">✎</div><h3>Planners</h3><p>Make room for everything you're dreaming up.</p></a>
+        <a class="category" href="#featured"><div class="symbol">❋</div><h3>Printables</h3><p>Beautiful downloads ready when you are.</p></a>
+        <a class="category" href="#featured"><div class="symbol">◇</div><h3>Business Tools</h3><p>Creative resources for getting things done.</p></a>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-head">
+        <div class="eyebrow">THE DIGITAL BOUTIQUE</div>
+        <h2>Little Things. Big Possibilities.</h2>
+        <p>Here's a preview of the kinds of treasures you'll find in our shop.</p>
+      </div>
+      <div class="shop-grid">
+        <article class="product">
+          <div class="art">The Beautiful<br>Life Planner</div>
+          <div class="product-info"><small>PLANNERS & ORGANIZATION</small><h3>Your Days, Your Way</h3><p>A stylish planner concept for bringing plans, priorities, and everyday life together.</p><div class="product-bottom"><span class="price">Coming soon</span><button class="mini-button" onclick="alert('This is a preview. Product checkout is not connected yet.')">VIEW DETAILS</button></div></div>
+        </article>
+        <article class="product">
+          <div class="art coral-art">Creative<br>Possibilities</div>
+          <div class="product-info"><small>AI ART & CLIPART</small><h3>Clipart Collection</h3><p>Imaginative digital artwork for crafting, designing, and making something all your own.</p><div class="product-bottom"><span class="price">Coming soon</span><button class="mini-button" onclick="alert('This is a preview. Product checkout is not connected yet.')">VIEW DETAILS</button></div></div>
+        </article>
+        <article class="product">
+          <div class="art gold-art">The Creative<br>Workroom</div>
+          <div class="product-info"><small>BUSINESS RESOURCES</small><h3>Digital Design Toolkit</h3><p>Creative resource concepts for small businesses, makers, and independent dreamers.</p><div class="product-bottom"><span class="price">Coming soon</span><button class="mini-button" onclick="alert('This is a preview. Product checkout is not connected yet.')">VIEW DETAILS</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="eyebrow">A DIFFERENT KIND OF CREATIVE STUDIO</div>
+      <h2>Old Roots. New Ideas.</h2>
+      <p>Inspired by the independent spirit of Appalachia and the endless possibilities of technology, we're here to bring a little more imagination to the everyday.</p>
+      <a class="button coral" href="#collections">COME HAVE A LOOK ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <strong>APPALACHIAN DIGITAL CREATIONS</strong><br>
+    Appalachian roots. Artificial intelligence. Human creativity.<br>
+    © <span id="year"></span> Appalachian Digital Creations
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
